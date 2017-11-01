@@ -5,11 +5,12 @@ services:
     image: drone/drone:0.8
     ports:
       - 80:8000
+      - 9000:9000
     volumes:
       - /var/lib/drone:/var/lib/drone/
     restart: always
     environment:
-      - DRONE_HOST=http://drone.mobstaff.com
+      - DRONE_HOST=http://drone.andela.com
       - DRONE_GITHUB=true
       - DRONE_GITHUB_CLIENT=7ec4a6bd5d10b616dd2c
       - DRONE_GITHUB_SECRET=fe9cb795e298b4d5a0e3bfed27de616a7e930856
@@ -17,13 +18,13 @@ services:
       - DRONE_SECRET=KxqQZDkleXFCufJk5jC
 
   drone-agent:
-    image: drone/drone:0.8
-    command: agent
+    image: drone/agent:0.8
     restart: always
     depends_on:
       - drone-server
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - DRONE_SERVER=ws://drone-server:8000/ws/broker
+      - DRONE_SERVER=drone-server:9000
       - DRONE_SECRET=KxqQZDkleXFCufJk5jC
+      - DRONE_HOSTNAME=drone.andela.com
