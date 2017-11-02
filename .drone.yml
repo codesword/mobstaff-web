@@ -6,13 +6,6 @@ pipeline:
       - npm test
       - npm run build
 
-  docker:
-    image: docker
-    commands:
-      - docker ps
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-
   deploy_staging:
     image: alpine
     commands:
@@ -20,5 +13,5 @@ pipeline:
     volumes:
       - /mobstaff/www/staging:/www/staging
     when:
-      branch: develop
+      branch: master
       status: success

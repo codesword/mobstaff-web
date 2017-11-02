@@ -1,0 +1,33 @@
+staging.mobstaff.andela.com {
+    gzip
+    log /mobstaff/logs staging.requests.log {
+        rotate_size 50  # Rotate after 50 MB
+        rotate_age  90  # Keep rotated files for 90 days
+        rotate_keep 20  # Keep at most 20 log files
+        rotate_compress # Compress rotated log files in gzip format
+    }
+    root /www/staging/build
+    tls dyoungikem@gmail.com
+}
+
+mobstaff.andela.com {
+    gzip
+    log /mobstaff/logs production.requests.log {
+        rotate_size 50  # Rotate after 50 MB
+        rotate_age  90  # Keep rotated files for 90 days
+        rotate_keep 20  # Keep at most 20 log files
+        rotate_compress # Compress rotated log files in gzip format
+    }
+    root /www/production/build
+    tls dyoungikem@gmail.com
+}
+
+drone.andela.com {
+    gzip {
+        not /stream/events
+    }
+    proxy / drone-server:8000 {
+        transparent
+    }
+    tls dyoungikem@gmail.com
+}
