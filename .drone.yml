@@ -15,3 +15,13 @@ pipeline:
     when:
       branch: master
       status: success
+
+  deploy_production:
+    image: alpine
+    commands:
+      - cp -rf build /www/production/
+    volumes:
+      - /mobstaff/www/production:/www/production
+    when:
+      event:
+        include: [ tag, deployment ]
