@@ -1,10 +1,20 @@
 version: '2'
 
 services:
+  caddy:
+    image: abiosoft/caddy
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /mobstaff/www:/www
+      - /mobstaff/Caddyfile:/etc/Caddyfile
+      - /mobstaff/.caddy:/root/.caddy
+    restart: always
+
   drone-server:
     image: drone/drone:0.8
     ports:
-      - 80:8000
       - 9000:9000
     volumes:
       - /var/lib/drone:/var/lib/drone/
@@ -14,7 +24,7 @@ services:
       - DRONE_GITHUB=true
       - DRONE_GITHUB_CLIENT=7ec4a6bd5d10b616dd2c
       - DRONE_GITHUB_SECRET=fe9cb795e298b4d5a0e3bfed27de616a7e930856
-      - DRONE_OPEN=true
+      - DRONE_ADMIN=codesword,wecking
       - DRONE_SECRET=KxqQZDkleXFCufJk5jC
 
   drone-agent:
