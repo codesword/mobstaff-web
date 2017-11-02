@@ -23,5 +23,4 @@ pipeline:
     volumes:
       - /mobstaff/www/production:/www/production
     when:
-      event:
-        include: [ tag, deployment ]
+      event: [ tag, deployment ]
