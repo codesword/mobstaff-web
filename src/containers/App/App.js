@@ -1,17 +1,17 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {ConnectedRouter} from 'react-router-redux'
-import history from '../history'
+import history from 'helpers/history'
 import NotificationsSystem from 'reapop'
 import theme from 'components/notifications/reapop/reapop-theme-bootstrap'
 //global css
-import 'App/App.css'
+import 'containers/App/App.css'
 
 //structural elements
 import LeftSidebar from 'containers/LeftSidebar'
 import Navbar from 'containers/Navbar'
 
-import Routes from 'App/Routes'
+import Routes from 'containers/App/Routes'
 
 class App extends Component {
   render() {
