@@ -2,7 +2,7 @@ import React from 'react'
 import {Switch, Route} from 'react-router'
 
 //dashboards
-import Dashboard from 'components/Dashboard'
+import Dashboard from 'containers/Dashboard'
 import Login from 'containers/Login'
 import Empty from 'containers/Empty'
 

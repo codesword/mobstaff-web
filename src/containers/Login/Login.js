@@ -18,7 +18,7 @@ const Login = ({fields, loading, submit}) => (
     <div className="links">
       <p>
         <span className="m-r-5">Don't have an account?</span>
-        <Link to="/pages/create-account">Create account</Link>
+        <Link to="/signup">Create account</Link>
       </p>
     </div>
   </Form>

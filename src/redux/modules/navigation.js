@@ -3,7 +3,7 @@ const urls = [
     title: 'Navigation',
     items: [
       {
-        url: '/dashboards',
+        url: '/dashboard',
         icon: 'dashboard',
         title: 'Dashboard',
         badge: {
