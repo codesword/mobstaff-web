@@ -1,5 +1,5 @@
 import React from 'react'
-import Widget from '../../elements/Widget'
+import Widget from 'components/Widget'
 
 const Index = () => (
   <div className="row">

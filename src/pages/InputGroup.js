@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {validateInput} from '../actions/pages'
+import {validateInput} from 'actions/pages'
 
 const InputGroup = ({field, validateInput}) => {
   let hasErrors = field.errors.length > 0 ? true : false

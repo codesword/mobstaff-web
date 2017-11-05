@@ -1,8 +1,8 @@
 import {connect} from 'react-redux'
 import {compose, lifecycle} from 'recompose'
-import Dashboard from '../dashboards/analytics/Analytics'
+import Dashboard from 'components/dashboard/Analytics'
 
-const CollapsedSidebar1 = compose(
+const CollapsedSidebar = compose(
   connect(state => {
     return {
       config: state.config
@@ -18,4 +18,4 @@ const CollapsedSidebar1 = compose(
   })
 )
 
-export default CollapsedSidebar1(Dashboard)
+export default CollapsedSidebar(Dashboard)

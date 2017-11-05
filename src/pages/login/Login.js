@@ -1,9 +1,11 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {validate, submit} from '../../actions/pages/index'
-import Form from '../Form'
-import InputGroup from '../InputGroup'
+import {validate, submit} from 'actions/pages/index'
+import Form from 'pages/Form'
+import InputGroup from 'pages/InputGroup'
 import {Link} from 'react-router-dom'
+import SubmitButton from 'components/SubmitButton'
+
 
 const Login = ({fields, submit}) => (
   <Form
@@ -12,16 +14,7 @@ const Login = ({fields, submit}) => (
     {fields[0] && <InputGroup field={fields[0]} />}
     {fields[1] && <InputGroup field={fields[1]} />}
     {fields &&
-      submit && (
-        <div className="form-group">
-          <button
-            className="btn btn-primary btn-rounded btn-outline"
-            type="submit"
-            onClick={() => submit(fields)}>
-            Submit
-          </button>
-        </div>
-      )}
+      submit && <div className="form-group text-right"><SubmitButton loading={false} /> </div>}
     <div className="links">
       <p>
         <span className="m-r-5">Don't have an account?</span>

@@ -3,20 +3,22 @@ import {connect} from 'react-redux'
 import {ConnectedRouter} from 'react-router-redux'
 import history from './history'
 import NotificationsSystem from 'reapop'
-import theme from './notifications/reapop/reapop-theme-bootstrap'
-import './css/icons/material-design-icons.css'
-import './css/icons/simple-line-icons.css'
+import theme from 'components/notifications/reapop/reapop-theme-bootstrap'
 
+import 'css/icons/material-design-icons.css'
+import 'css/icons/simple-line-icons.css'
+import 'css/ui-elements/typography.css'
+import 'css/ui-elements/buttons.css'
 
 //global css
-import './css/bootstrap/bootstrap.css'
-import './css/main.css'
+import 'css/bootstrap/bootstrap.css'
+import 'css/main.css'
 
 //structural elements
-import LeftSidebar from './elements/left-sidebar'
-import Navbar from './elements/navbar'
+import LeftSidebar from 'components/left-sidebar'
+import Navbar from 'components/navbar'
 
-import Routes from './Routes'
+import Routes from 'Routes'
 
 class App extends Component {
   render() {

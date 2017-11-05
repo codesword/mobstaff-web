@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {compose, lifecycle} from 'recompose'
-import Dashboard from '../dashboards/analytics/Analytics'
+import Dashboard from 'components/dashboard/Analytics'
 
 const DefaultSidebar1 = compose(
   connect(state => {

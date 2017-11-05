@@ -2,7 +2,7 @@ import React from 'react'
 import {Switch, Route} from 'react-router'
 
 //dashboards
-import Analytics from './dashboards/analytics'
+import Analytics from 'components/dashboard'
 import Login from './pages/login'
 import EmptyPage from './pages/empty-page'
 
