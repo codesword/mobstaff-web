@@ -1,6 +1,6 @@
 import React from 'react'
-import SidebarHeadingImage from 'components/left-sidebar/SidebarHeadingImage'
-import SidebarHeadingDropdown from 'components/left-sidebar/SidebarHeadingDropdown'
+import SidebarHeadingImage from 'components/LeftSidebar/SidebarHeadingImage'
+import SidebarHeadingDropdown from 'components/LeftSidebar/SidebarHeadingDropdown'
 import 'css/elements/sidebar-heading.css'
 import 'css/elements/collapsed-sidebar-heading.css'
 

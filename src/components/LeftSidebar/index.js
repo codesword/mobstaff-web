@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {compose, branch, renderComponent, renderNothing} from 'recompose'
-import LeftSidebar from 'components/left-sidebar/LeftSidebar'
+import LeftSidebar from 'components/LeftSidebar/LeftSidebar'
 
 const layouts = ['default-sidebar', 'collapsed-sidebar']
 

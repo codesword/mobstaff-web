@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AreaChart from 'components/area-chart-widgets/AreaChart'
-import TextWidget from 'components/text-widgets/TextWidget'
+import BarChart from 'components/BarChart'
+import TextWidget from 'components/widgets/TextWidget'
 
-const AreaChartWidget = ({widget, color, height}) => (
-  <div className="line-chart-widget-9">
+const BarChartWidget = ({widget, color, height}) => (
+  <div className="bar-chart-widget-9">
     <div className="row align-items-center justify-content-center m-b-10">
       <div className="col">
         <div className="p-10">
@@ -14,16 +14,16 @@ const AreaChartWidget = ({widget, color, height}) => (
     </div>
     <div className="row align-items-center justify-content-center">
       <div className="col">
-        <AreaChart color={color} height={height} data={widget.data} />
+        <BarChart color={color} height={height} data={widget.data} />
       </div>
     </div>
   </div>
 )
 
-AreaChartWidget.propTypes = {
+BarChartWidget.propTypes = {
   widget: PropTypes.object,
   color: PropTypes.string,
   height: PropTypes.number
 }
 
-export default AreaChartWidget
+export default BarChartWidget

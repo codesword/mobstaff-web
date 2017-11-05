@@ -1,6 +1,6 @@
 import React from 'react'
 import Task from './Task'
-import {random} from '../../functions'
+import {random} from 'functions'
 import 'css/elements/dropdown-tasks.css'
 
 const DropdownTasks = ({tasksForToday, tasksForTomorrow}) => (

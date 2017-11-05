@@ -1,9 +1,9 @@
 import React from 'react'
 import {random} from 'functions'
 import DashboardWidget from 'components/DashboardWidget'
-import BarChartWidget from 'components/bar-chart-widgets/BarChartWidget'
-import AreaChartWidget from 'components/area-chart-widgets/AreaChartWidget'
-import LineChartWidget from 'components/line-chart-widgets/LineChartWidget'
+import BarChartWidget from 'components/widgets/BarChartWidget'
+import AreaChartWidget from 'components/widgets/AreaChartWidget'
+import LineChartWidget from 'components/widgets/LineChartWidget'
 
 const chartData = () => {
   let data = []

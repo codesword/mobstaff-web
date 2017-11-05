@@ -1,13 +1,13 @@
 import React from 'react'
-import Logo from 'components/logo'
-import Search from 'components/navbar/Search'
-import ToggleLayout from 'components/navbar/ToggleLayout'
-import ToggleLayoutRight from 'components/navbar/ToggleLayoutRight'
+import Logo from 'components/Logo'
+import Search from 'components/Navbar/Search'
+import ToggleLayout from 'components/Navbar/ToggleLayout'
+import ToggleLayoutRight from 'components/Navbar/ToggleLayoutRight'
 
-import DropdownGrid from 'components/navbar/DropdownGrid'
-import DropdownTasks from 'components/navbar/DropdownTasks'
-import DropdownMessages from 'components/navbar/DropdownMessages'
-import DropdownUser from 'components/navbar/DropdownUser'
+import DropdownGrid from 'components/Navbar/DropdownGrid'
+import DropdownTasks from 'components/Navbar/DropdownTasks'
+import DropdownMessages from 'components/Navbar/DropdownMessages'
+import DropdownUser from 'components/Navbar/DropdownUser'
 import 'css/elements/navbar.css'
 
 const Navbar1 = () => (

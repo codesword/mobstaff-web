@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import 'css/text-widgets/text-widget.css'
 
-const TextWidget1 = ({
+const TextWidget = ({
   bg,
   color,
   align,
@@ -30,11 +30,11 @@ const TextWidget1 = ({
   </div>
 )
 
-TextWidget1.defaultProps = {
+TextWidget.defaultProps = {
   padding: 10
 }
 
-TextWidget1.propTypes = {
+TextWidget.propTypes = {
   bg: PropTypes.string,
   color: PropTypes.string,
   align: PropTypes.string,
@@ -45,4 +45,4 @@ TextWidget1.propTypes = {
   padding: PropTypes.number
 }
 
-export default TextWidget1
+export default TextWidget

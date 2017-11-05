@@ -1,6 +1,6 @@
 import React from 'react'
 import DashboardWidget from 'components/DashboardWidget'
-import ActivityWidget from 'components/activity-widgets/ActivityWidget'
+import ActivityWidget from 'components/widgets/ActivityWidget'
 import sales from 'json/sales-2.json'
 
 const Section3 = () => (

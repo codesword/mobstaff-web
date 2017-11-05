@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {compose, branch, renderComponent, renderNothing} from 'recompose'
-import Navbar from 'components/navbar/Navbar'
+import Navbar from 'components/Navbar/Navbar'
 
 const layouts = ['default-sidebar', 'collapsed-sidebar']
 

@@ -15,8 +15,8 @@ import 'css/bootstrap/bootstrap.css'
 import 'css/main.css'
 
 //structural elements
-import LeftSidebar from 'components/left-sidebar'
-import Navbar from 'components/navbar'
+import LeftSidebar from 'components/LeftSidebar'
+import Navbar from 'components/Navbar'
 
 import Routes from 'Routes'
 

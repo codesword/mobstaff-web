@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from 'components/left-sidebar/Menu'
+import Menu from 'components/LeftSidebar/Menu'
 import 'css/elements/left-sidebar.css'
 
 const LeftSidebar = ({navigation}) => {
