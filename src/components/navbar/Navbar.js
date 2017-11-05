@@ -8,23 +8,23 @@ import DropdownMessages from 'components/Navbar/DropdownMessages'
 import DropdownUser from 'components/Navbar/DropdownUser'
 import 'components/Navbar/Navbar.css'
 
-const Navbar1 = () => (
+const Navbar = ({ config, setConfig, userItems, tasks, notifications }) => (
   <nav className="navbar navbar-1 d-flex justify-content-around align-items-center flex-nowrap">
     <Logo />
-    <ToggleLayout />
+    <ToggleLayout config={config} setConfig={setConfig} />
     <ul className="nav nav-inline nav-inline-1">
       <li className="nav-item nav-item-dropdown">
         <a className="nav-link">
           <i className="material-icons">rss_feed</i>
         </a>
-        <DropdownTasks />
+        <DropdownTasks tasksForToday={tasks.tasksForToday} tasksForTomorrow={tasks.tasksForTomorrow} />
       </li>
       <li className="nav-item nav-item-dropdown">
         <a className="nav-link nav-link-badge">
           <i className="material-icons">notifications_none</i>
           <span className="badge badge-sm badge-rounded badge-danger">3</span>
         </a>
-        <DropdownMessages />
+        <DropdownMessages notifications={notifications}/>
       </li>
     </ul>
     <div className="separator" />
@@ -39,11 +39,11 @@ const Navbar1 = () => (
             alt="avatar"
           />
         </a>
-        <DropdownUser />
+        <DropdownUser items={userItems}/>
       </li>
     </ul>
-    <ToggleLayoutRight />
+    <ToggleLayoutRight config={config} setConfig={setConfig} />
   </nav>
 )
 
-export default Navbar1
+export default Navbar

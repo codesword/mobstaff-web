@@ -1,7 +1,6 @@
 import React from 'react'
 import Menu from 'components/LeftSidebar/Menu'
-import SidebarHeading from 'components/LeftSidebar/SidebarHeading'
-import SidebarWidget from 'components/LeftSidebar/SidebarWidget'
+// import SidebarWidget from 'components/LeftSidebar/SidebarWidget'
 
 import 'components/LeftSidebar/LeftSidebar.css'
 
@@ -12,7 +11,6 @@ const LeftSidebar = ({navigation}) => {
       <div className="left-sidebar left-sidebar-1">
         <div className="wrapper">
           <div className="content">
-          <SidebarWidget/>
             {navigation.map((menu, i) => (
               <div key={i} className="section">
                 <div className="section-title">{menu.title}</div>

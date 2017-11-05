@@ -1,5 +1,5 @@
 import React from 'react'
-import {random} from 'functions'
+import {random} from 'helpers/functions'
 import DashboardWidget from 'components/DashboardWidget'
 import BarChartWidget from 'components/widgets/BarChartWidget'
 import AreaChartWidget from 'components/widgets/AreaChartWidget'

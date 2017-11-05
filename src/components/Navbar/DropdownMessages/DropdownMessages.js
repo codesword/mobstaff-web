@@ -24,41 +24,4 @@ const DropdownMessages = ({notifications}) => (
   </div>
 )
 
-let notifications = [
-  {
-    badge: 'success',
-    type: 'sale',
-    title: 'Michael Smith upgraded to the $50 plan',
-    date: '4 minutes ago'
-  },
-  {
-    badge: 'danger',
-    type: 'return',
-    title: 'Lucas Johnson cancelled the $50 plan',
-    date: '34 minutes ago'
-  },
-  {
-    badge: 'warning',
-    type: 'refund',
-    title: 'Jane Smith is asking for a refund',
-    date: '2 hours ago'
-  },
-  {
-    badge: 'success',
-    type: 'sale',
-    title: 'George Lucas upgraded to the $25 plan',
-    date: '3 hours ago'
-  },
-  {
-    badge: 'primary',
-    type: 'new',
-    title: 'Andrew Peters is looking for a new plan',
-    date: '4 hours ago'
-  }
-]
-
-const SampleDropdownMessages = () => (
-  <DropdownMessages notifications={notifications} />
-)
-
-export default SampleDropdownMessages
+export default DropdownMessages

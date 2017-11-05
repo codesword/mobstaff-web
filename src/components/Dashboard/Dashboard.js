@@ -1,7 +1,7 @@
 import React from 'react'
-import Section1 from 'components/dashboard/Section1'
-import Section2 from 'components/dashboard/Section2'
-import Section3 from 'components/dashboard/Section3'
+import Section1 from 'components/Dashboard/Section1'
+import Section2 from 'components/Dashboard/Section2'
+import Section3 from 'components/Dashboard/Section3'
 
 const Dashboard = () => (
   <div>

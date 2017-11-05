@@ -1,4 +1,1 @@
-import StoredLayout from 'layouts/StoredLayout'
-import Analytics from 'components/dashboard/Analytics'
-
-export default StoredLayout(Analytics)
+export {default} from 'components/Dashboard/Dashboard'

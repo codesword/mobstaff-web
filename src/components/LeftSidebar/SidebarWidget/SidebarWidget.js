@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {random} from 'functions'
+import {random} from 'helpers/functions'
 import 'components/LeftSidebar/SidebarWidget/SidebarWidget.css'
 
 const SidebarWidget1 = ({title, items}) => (

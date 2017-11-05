@@ -1,6 +1,5 @@
 import React from 'react'
 import Task from './Task'
-import {random} from 'functions'
 import 'components/Navbar/DropdownTasks/DropdownTasks.css'
 
 const DropdownTasks = ({tasksForToday, tasksForTomorrow}) => (
@@ -15,42 +14,4 @@ const DropdownTasks = ({tasksForToday, tasksForTomorrow}) => (
   </div>
 )
 
-let tasksForToday = [
-  {
-    title: 'Mobile app development',
-    color: 'secondary',
-    value: random(50, 90)
-  },
-  {
-    title: 'Deploy github project',
-    color: 'info',
-    value: random(50, 90)
-  }
-]
-
-let tasksForTomorrow = [
-  {
-    title: 'Customer development',
-    color: 'success',
-    value: random(50, 90)
-  },
-  {
-    title: 'Database backup',
-    color: 'warning',
-    value: random(50, 90)
-  },
-  {
-    title: 'Release beta version',
-    color: 'danger',
-    value: random(50, 90)
-  }
-]
-
-const SampleDropdownTasks = () => (
-  <DropdownTasks
-    tasksForToday={tasksForToday}
-    tasksForTomorrow={tasksForTomorrow}
-  />
-)
-
-export default SampleDropdownTasks
+export default DropdownTasks

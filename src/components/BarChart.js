@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {ResponsiveContainer, BarChart, Bar, Tooltip} from 'recharts'
-import {random} from 'functions'
+import {random} from 'helpers/functions'
 
 const data = Array.from(Array(20).keys()).map(v => {
   return {name: `key: ${v}`, value: random(20, 100)}

@@ -1,6 +1,6 @@
 import React from 'react'
 import DashboardWidget from 'components/DashboardWidget'
-import AreaChart from 'components/dashboard/AreaChart'
+import AreaChart from 'components/Dashboard/AreaChart'
 
 const Section2 = () => (
   <DashboardWidget title="Sales" description="Weekly sales performance">
