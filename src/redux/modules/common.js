@@ -16,7 +16,31 @@ export function setFormState(formState) {
 }
 
 export function validate(value, field) {
-  let result = approve.value(value, field.rules)
+  field.value = value
+  field = validateField(field)
+  return {
+    type: 'VALIDATE',
+    field
+  }
+}
+
+export function inValidate(field) {
+  return {
+    type: 'IN_VALID',
+  }
+}
+
+export function validateAll(fields) {
+  fields = fields.map(field => validateField(field))
+  return {
+    type: 'VALIDATE_ALL',
+    fields
+  }
+}
+
+export function validateField(field) {
+  console.log('called validateInput', field)  
+  let result = approve.value(field.value, field.rules)
   if (result.errors && result.errors.length > 0) {
     field = Object.assign({}, field, {
       errors: Array.from(result.errors),
@@ -24,18 +48,8 @@ export function validate(value, field) {
     })
   } else {
     field = Object.assign({}, field, {
-      errors: [],
-      value: value
+      errors: []
     })
   }
-  return {
-    type: 'VALIDATE',
-    field
-  }
+  return field
 }
-
-/*
-export function submit(fields) {
-	
-}
-*/

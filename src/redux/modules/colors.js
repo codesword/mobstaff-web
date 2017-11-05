@@ -270,18 +270,17 @@ export const materialDesignColors = {
   'blue-grey-a700': '#455a64'
 }
 
-export function colors(
-  state = {
-    default: materialDesignColors['grey-900'],
-    primary: materialDesignColors['indigo-700'],
-    secondary: materialDesignColors['purple-700'],
-    info: materialDesignColors['light-blue-700'],
-    success: materialDesignColors['green-700'],
-    warning: materialDesignColors['amber-700'],
-    danger: materialDesignColors['red-700']
-  },
-  action
-) {
+const initialState = {
+  default: materialDesignColors['grey-900'],
+  primary: materialDesignColors['indigo-700'],
+  secondary: materialDesignColors['purple-700'],
+  info: materialDesignColors['light-blue-700'],
+  success: materialDesignColors['green-700'],
+  warning: materialDesignColors['amber-700'],
+  danger: materialDesignColors['red-700']
+}
+
+export function colors(state = initialState, action) {
   switch (action.type) {
     case 'SET_COLOR':
       return Object.assign({}, state, {

@@ -3,7 +3,7 @@ import {routerReducer} from 'react-router-redux'
 import {config} from './config'
 import {colors, backgroundColors} from './colors'
 import {navigation} from './navigation'
-import {login} from './pages/login'
+import {auth} from './auth'
 import {reducer as notificationsReducer} from 'reapop'
 
 const rootReducer = combineReducers({
@@ -11,7 +11,7 @@ const rootReducer = combineReducers({
   colors,
   backgroundColors,
   navigation,
-  login,
+  auth,
   router: routerReducer,
   notifications: notificationsReducer()
 })
