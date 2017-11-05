@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'css/text-widgets/text-widget.css'
+import 'components/widgets/TextWidget.css'
 
 const TextWidget = ({
   bg,

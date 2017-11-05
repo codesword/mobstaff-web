@@ -1,5 +1,5 @@
 import React from 'react'
-import 'css/pages/form.css'
+import 'pages/Form.css'
 
 const Form = ({title, description, children}) => (
   <div className="sample-form">

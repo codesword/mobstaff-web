@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'css/elements/widget.css'
+import 'components/Widget.css'
 const Widget = ({title, description, children}) => {
   return (
     <div className="widget">

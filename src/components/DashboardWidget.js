@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import 'components/Widget.css'
 
-import 'css/elements/widget.css'
 const DashboardWidget = ({title, description, children}) => {
   return (
     <div className="widget dashboard-widget">

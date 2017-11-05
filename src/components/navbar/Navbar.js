@@ -3,24 +3,16 @@ import Logo from 'components/Logo'
 import Search from 'components/Navbar/Search'
 import ToggleLayout from 'components/Navbar/ToggleLayout'
 import ToggleLayoutRight from 'components/Navbar/ToggleLayoutRight'
-
-import DropdownGrid from 'components/Navbar/DropdownGrid'
 import DropdownTasks from 'components/Navbar/DropdownTasks'
 import DropdownMessages from 'components/Navbar/DropdownMessages'
 import DropdownUser from 'components/Navbar/DropdownUser'
-import 'css/elements/navbar.css'
+import 'components/Navbar/Navbar.css'
 
 const Navbar1 = () => (
   <nav className="navbar navbar-1 d-flex justify-content-around align-items-center flex-nowrap">
     <Logo />
     <ToggleLayout />
     <ul className="nav nav-inline nav-inline-1">
-      <li className="nav-item nav-item-dropdown">
-        <a className="nav-link">
-          <i className="material-icons">fullscreen</i>
-        </a>
-        <DropdownGrid />
-      </li>
       <li className="nav-item nav-item-dropdown">
         <a className="nav-link">
           <i className="material-icons">rss_feed</i>

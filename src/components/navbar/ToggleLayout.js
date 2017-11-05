@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {setConfig} from 'actions/config'
 
-class ToggleLayout1 extends React.Component {
+class ToggleLayout extends React.Component {
   constructor() {
     super()
     this.toggleLayout = this.toggleLayout.bind(this)
@@ -38,4 +38,4 @@ const mapDispatchToProps = dispatch => {
     setConfig: (key, value) => dispatch(setConfig(key, value))
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(ToggleLayout1)
+export default connect(mapStateToProps, mapDispatchToProps)(ToggleLayout)

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'css/activity-widgets/activity-widget-1.css'
+import 'components/widgets/ActivityWidget.css'
 
 const ActivityWidget = ({items, amount}) => (
   <div className="activity-widget-1">
