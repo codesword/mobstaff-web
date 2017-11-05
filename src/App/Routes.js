@@ -2,15 +2,15 @@ import React from 'react'
 import {Switch, Route} from 'react-router'
 
 //dashboards
-import Analytics from 'components/dashboard'
-import Login from 'pages/login'
-import EmptyPage from 'pages/empty-page'
+import Dashboard from 'components/Dashboard'
+import Login from 'containers/Login'
+import Empty from 'containers/Empty'
 
 const Routes = () => (
   <Switch>
-    <Route path="/dashboards" component={Analytics} />
+    <Route path="/dashboard" component={Dashboard} />
     <Route path="/login" component={Login} />
-    <Route component={EmptyPage} />
+    <Route component={Empty} />
   </Switch>
 )
 

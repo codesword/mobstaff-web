@@ -8,8 +8,8 @@ import theme from 'components/notifications/reapop/reapop-theme-bootstrap'
 import 'App/App.css'
 
 //structural elements
-import LeftSidebar from 'components/LeftSidebar'
-import Navbar from 'components/Navbar'
+import LeftSidebar from 'containers/LeftSidebar'
+import Navbar from 'containers/Navbar'
 
 import Routes from 'App/Routes'
 
